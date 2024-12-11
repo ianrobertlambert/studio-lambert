@@ -1,0 +1,40 @@
+#time-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+#indicator.online {
+    background-color: green;
+}
+
+#indicator.offline {
+    background-color: red;
+}
+
+#indicator.after-hours {
+    background-color: grey;
+}
+
+#time-display {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.blinking-colon {
+    animation: blink-animation 1s steps(1) infinite;
+}
+
+@keyframes blink-animation {
+    50% {
+        opacity: 0;
+    }
+}
