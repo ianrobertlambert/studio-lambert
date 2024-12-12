@@ -4,91 +4,81 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Studio Lambert – Product design partner for ambitious teams.</title>
+        <title>Studio Lambert – Design driven ventures. Founded by lovers.</title>
         <link rel="stylesheet" href="styles.css" />
     </head>
 
     <body>
         <div class="container">
-
             <nav>
                 <div class="nav-left">
-                    <img class="logo" src="assets/logo-studio-lambert.svg" alt="Studio Lambert Logo" />
+                    <img class="nav-logo" src="assets/logo-studio-lambert.svg" alt="Studio Lambert Logo" /></img>
                 </div>
-
                 <div class="nav-right">
-                    <div class="indicator" class="online"></div>
-
-
-                    <p>Saint-Raphaël, France <span class="hour">00</span><span class="blink">:</span><span class="minute">00</span> <span class="timezone">CET</span>
+                    <div class="nav-indicator" class="online"></div>
+                    <p class="color-black">Saint-Raphaël, France</p>
+                    <p><span class="nav-hour">00</span><span class="blink">:</span><span class="nav-minute">00</span> <span class="nav-timezone">CET</span></p>
                 </div>
-
             </nav>
-<!-- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <main>
-                <section>
-                    <div>
-                        <h1>Studio Lambert builds design-driven ventures.</h1>
+                <section id="hero">
+                    <div class="hero-text">
+                        <h1><span class="color-dark">Studio Lambert</span> builds design-driven ventures.</h1>
                         <p>We believe that design has the power to create connections between people, ideas, and the world around us.</p>
                     </div>
-                    <div><button>About</button><button>Contact us</button></div>
+                    <div class="hero-ctas">
+                        <a href="mailto:ian@studiolambert.co?subject=Hello%20Studio%20Lambert" class="button-primary">Contact us</a>
+                        <a href="#about" class="button-secondary">About</a>
+                    </div>
                 </section>
-                <section>
+                <section id="ventures">
                     <h2>Ventures</h2>
-                    <div>
-                        <div>
-                            <div><img src="assets/logo-venture.png" alt="Venture Logo" />
-                                <div>TAG</div>
+                    <a href="https://example.com" target="_blank" class="venture-card-link">
+                        <div class="venture-card-active">
+                            <div class="venture-header">
+                                <img class="venture-logo" src="assets/logo-venture.png" alt="Venture Logo" /></img>
+                                <img class="icon" src="assets/icon-chevron-right.svg" alt="Chevron Right Icon" /></img>
                             </div>
-                            <h3>Name</h3>
-                            <p>Description</p>
+                            <div class="venture-text">
+                                <h3>Name</h3>
+                                <p>Description</p>
+                            </div>
                         </div>
-                        <div>
-                            <div><img src="assets/logo-venture.png" alt="Venture Logo" />
-                                <div>TAG</div>
-                            </div>
+                    </a>
+                    <div class="venture-card-soon">
+                        <div class="venture-header">
+                            <img class="venture-logo" src="assets/logo-venture.png" alt="Venture Logo" />
+                            <p class="venture-tag">SOON</p>
+                        </div>
+                        <div class="venture-text">
                             <h3>Name</h3>
                             <p>Description</p>
                         </div>
                     </div>
                 </section>
                 <hr />
-                <section>
-                    <div>
+                <section id="about">
+                    <div class="about-text">
                         <h2>About</h2>
-                        <p>Our mission is to marry passion with purpose, building design-driven ventures with lasting meaning. </p>
-                        <p>Founded by Lauren Lambert and Ian Lambert, the company represents a shared passion for clarity, beauty, and depth. Our philosophy is straightforward: Follow your passions. Think for the future. Let curiosity lead. This philosophy has blossomed into a playground for innovation — a place where ideas are nurtured from conception to reality. This is our sanctuary, where we make, play, explore, and ultimately build for the world we need.</p>
+                        <p class="callout">Our mission is to marry passion with purpose, building design-driven ventures with lasting meaning. </p>
+                        <p>Founded by lovers, <span class="color-black">Lauren Lambert</span> and <span class="color-black">Ian Lambert</span>, the company represents a shared passion for seeking clarity, beauty, and depth. Our philosophy is straightforward: Follow your passions. Think for the future. Let curiosity lead. This philosophy has blossomed into a playground for innovation — a place where ideas are nurtured from conception to reality. This is our sanctuary, where we make, play, explore, and ultimately build for the world we need.</p>
                     </div>
-                    <div><img src="assets/avatar-lauren.png" alt="Lauren Lambert" /><img src="assets/icon-infinity.svg" alt="Infinity Icon" /><img src="assets/avatar-ian.png" alt="Ian Lambert" /></div>
+                    <div class="about-people"><img class="about-person" src="assets/avatar-lauren.png" alt="Lauren Lambert" /><img class="icon" src="assets/icon-infinity.svg" alt="Infinity Icon" /><img class="about-person" src="assets/avatar-ian.png" alt="Ian Lambert" /></div>
                 </section>
                 <hr />
             </main>
             <footer>
-                <div>
+                <div class="footer-left">
                     <ul>
-                        <li><img src="assets/icon-x.svg" alt="X Icon" /></li>
-                        <li><img src="assets/icon-instagram.svg" alt="Instagram Icon" /></li>
-                        <li><img src="assets/icon-linkedin.svg" alt="LinkedIn Icon" /></li>
+                        <li><a href="#"><img src="assets/icon-x.svg" alt="X Icon" /></a></li>
+                        <li><a href="#"><img src="assets/icon-instagram.svg" alt="Instagram Icon" /></a></li>
+                        <li><a href="#"><img src="assets/icon-linkedin.svg" alt="LinkedIn Icon" /></a></li>
                     </ul>
                 </div>
-                <div>
-                    <p>© <span id="year"></span> Studio Lambert</p>
+                <div class="footer-right">
+                    <p>© <span class="footer-year"></span> Studio Lambert</p>
                 </div>
-            </footer> -->
+            </footer>
             <script src="scripts.js"></script>
     </body>
 

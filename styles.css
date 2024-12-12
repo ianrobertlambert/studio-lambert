@@ -30,7 +30,7 @@
 }
 
 @font-face {
-	font-display: swap;	
+	font-display: swap;
 	font-family: 'GeneralSans-LightItalic';
 	font-style: italic;
 	font-weight: 300;
@@ -251,79 +251,34 @@ table {
 }
 
 /* structure */
-html {
-}
-
 body {
 	background: #ffffff;
-	color: #070B0E;
-	font-size: 16px;
-	line-height: 24px;
-	font-family: 'GeneralSans-Medium';
-	display: flex;
-	justify-content: center;
-	padding: 32px 0 32px 0;
- }
-
- .container {
-	width: 640px;
-	display: flex;
-	flex-direction: column;
-	gap: 96px;
- }
-
- main{
-	display: flex;
-	flex-direction: column;
-	gap: 96px;
- }
-
-/* nav */
-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.nav-left, .nav-right {
-	display: flex;
-	align-items: center;
-  }
-
-  .nav-left {
-	justify-content: flex-start;
-	gap: 8px;
-  }
-
-  .nav-right {
-	justify-content: flex-end;
-	gap: 8px;
-  }
-
-.logo {
-	width: 114px;
-	height: auto;
-}
-
-/* live time */
-
-.indicator {
-	background-color: #34FF63;
-	border-radius: 50%;
-	height: 8px;
-	width: 8px;
-}
-
-.indicator.online {
-	background-color: #34FF63;
-}
-
-.indicator.after-hours {
-	background-color: #B4B4B4;
-}
-
-.hour, .minute, .blink, .timezone {
 	color: #6D7170;
+	display: flex;
+	font-family: 'GeneralSans-Medium', 'Inter', sans-serif;
+	font-size: 16px;
+	justify-content: center;
+	line-height: 24px;
+	padding: 32px 16px 32px 16px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 96px;
+	width: 640px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 96px;
+}
+
+hr {
+	border: 0;
+	border-top: 1px dashed #EBEBEB;
+	width: 100%;
 }
 
 .blink {
@@ -333,5 +288,316 @@ nav {
 @keyframes blink-animation {
 	50% {
 		opacity: 0;
+	}
+}
+
+/* typography */
+h1 {
+	color: #070B0E;
+	font-size: 32px;
+	line-height: 40px;
+}
+
+h2 {
+	color: #070B0E;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+h3 {
+	color: #070B0E;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.callout {
+	color: #070B0E;
+	font-size: 24px;
+	line-height: 32px;
+}
+
+.color-black {
+	color: #070B0E;
+}
+
+.color-dark {
+	color: #6D7170;
+}
+
+/* buttons */
+.button-primary {
+	background-color: #070B0E;
+	border: none;
+	border-radius: 16px;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 8px 16px 8px 16px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+
+}
+
+.button-primary:hover {
+	background-color: #25292C;
+}
+
+.button-secondary {
+	background-color: #F7F7F7;
+	border: none;
+	border-radius: 16px;
+	color: #070B0E;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 8px 16px 8px 16px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+
+}
+
+.button-secondary:hover {
+	background-color: #EBEBEB;
+}
+
+/* icons */
+icon {
+	height: auto;
+	width: 24px;
+}
+
+/* nav */
+nav {
+	align-items: center;
+	display: flex;
+	gap: 16px;
+	justify-content: space-between;
+	width: 100%;
+	/* Aligns items to left and right sides */
+	/* Ensures the nav fills the available width */
+}
+
+.nav-left,
+.nav-right {
+	align-items: center;
+	display: flex;
+}
+
+.nav-left {
+	gap: 8px;
+	justify-content: flex-start;
+}
+
+.nav-right {
+	gap: 8px;
+	justify-content: flex-end;
+}
+
+.nav-logo {
+	height: auto;
+	width: 114px;
+}
+
+.nav-indicator {
+	background-color: #34FF63;
+	border-radius: 50%;
+	height: 8px;
+	width: 8px;
+}
+
+.nav-indicator.online {
+	background-color: #34FF63;
+}
+
+.nav-indicator.after-hours {
+	background-color: #B4B4B4;
+}
+
+.nav-hour,
+.nav-minute,
+.nav-blink,
+.nav-timezone {
+	color: #6D7170;
+}
+
+/* hero */
+#hero {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	text-align: center;
+}
+
+.hero-text {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.hero-ctas {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+	justify-content: center;
+}
+
+/* ventures */
+#ventures {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.venture-card-active {
+	background-color: #F7F7F7;
+	border-radius: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	padding: 16px;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.venture-card-active:hover {
+	background-color: #EBEBEB;
+	transform: scale(1.02);
+}
+
+.venture-card-link {
+	color: inherit;
+
+    text-decoration: none;
+}
+
+.venture-card-link a,
+.venture-card-link a:hover, 
+.venture-card-link a:focus,
+.venture-card-link a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.venture-card-soon {
+	background-color: #ffffff;
+	border-radius: 16px;
+	border: 1px solid #EBEBEB;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	padding: 16px;
+}
+
+.venture-header {
+	align-items: flex-start;
+	display: flex;
+	gap: 8px;
+	justify-content: space-between;
+}
+
+.venture-logo {
+	border-radius: 16px;
+	height: auto;
+	width: 48px;
+}
+
+.venture-tag {
+	align-items: center;
+	background-color: #25292C;
+	border-radius: 16px;
+	color: #ffffff;
+	display: inline-flex;
+	font-size: 12px;
+	justify-content: center;
+	line-height: 16px;
+	padding: 4px 8px;
+}
+
+/* about */
+#about {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.about-text {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.about-people {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	gap: 16px;
+}
+
+.about-person {
+	border-radius: 50%;
+	height: auto;
+	transition: transform 0.2s ease;
+	width: 64px;
+}
+
+.about-person:hover {
+	transform: scale(1.08);
+}
+
+/* footer */
+footer {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 16px;
+	width: 100%;
+	/* Align items to the left and right sides */
+	/* Ensure the footer fills the available width */
+}
+
+.footer-left,
+.footer-right {
+	align-items: center;
+	display: flex;
+}
+
+.footer-left {
+	gap: 16px;
+	justify-content: center;
+}
+
+.footer-right {
+	gap: 8px;
+	justify-content: flex-end;
+}
+
+footer ul {
+	display: flex;
+	gap: 16px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer ul li {
+	display: inline-block;
+}
+
+/* responsive */
+@media (max-width: 480px) {
+	body {
+		padding: 16px;
+	}
+
+	nav {
+		flex-direction: column;
+		gap: 16px;
+		justify-content: center;
+	}
+
+	footer {
+		flex-direction: column;
+		gap: 16px;
+		justify-content: center;
 	}
 }

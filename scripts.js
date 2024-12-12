@@ -1,8 +1,8 @@
 function updateTimeAndStatus() {
-    const indicator = document.querySelector(".indicator");
-    const hourElement = document.querySelector(".hour");
-    const minuteElement = document.querySelector(".minute");
-    const timezoneElement = document.querySelector(".timezone");
+    const indicator = document.querySelector(".nav-indicator");
+    const hourElement = document.querySelector(".nav-hour");
+    const minuteElement = document.querySelector(".nav-minute");
+    const timezoneElement = document.querySelector(".nav-timezone");
 
     // define office hours
     const officeStart = 9; // 09:00
@@ -28,16 +28,16 @@ function updateTimeAndStatus() {
 
     // update the online/offline indicator
     if (currentHour >= officeStart && currentHour < officeEnd) {
-        indicator.className = "indicator online";
+        indicator.className = "nav-indicator online";
     } else {
-        indicator.className = "indicator after-hours";
+        indicator.className = "nav-indicator after-hours";
     }
 }
 
 // function to update the year in the footer
 function footerYear() {
     const currentYear = new Date().getFullYear();
-    const yearElement = document.querySelector(".year");
+    const yearElement = document.querySelector(".footer-year");
     if (yearElement) {
         yearElement.textContent = currentYear;
     }
