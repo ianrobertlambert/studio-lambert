@@ -30,7 +30,7 @@ function updateTimeAndStatus() {
     if (currentHour >= officeStart && currentHour < officeEnd) {
         indicator.className = "online";
     } else {
-        indicator.className = currentHour < officeStart ? "offline" : "after-hours";
+        indicator.className = "after-hours";
     }
 }
 
