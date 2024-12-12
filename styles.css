@@ -1,40 +1,337 @@
-#time-container {
-    font-family: Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+/* fonts */
+@font-face {
+	font-display: swap;
+	font-family: 'GeneralSans-Extralight';
+	font-style: normal;
+	font-weight: 200;
+	src: url('../fonts/GeneralSans-Extralight.woff2') format('woff2'),
+		url('../fonts/GeneralSans-Extralight.woff') format('woff'),
+		url('../fonts/GeneralSans-Extralight.ttf') format('truetype');
 }
 
-#indicator {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: green;
+@font-face {
+	font-display: swap;
+	font-family: 'GeneralSans-ExtralightItalic';
+	font-style: italic;
+	font-weight: 200;
+	src: url('../fonts/GeneralSans-ExtralightItalic.woff2') format('woff2'),
+		url('../fonts/GeneralSans-ExtralightItalic.woff') format('woff'),
+		url('../fonts/GeneralSans-ExtralightItalic.ttf') format('truetype');
 }
 
-#indicator.online {
-    background-color: green;
+@font-face {
+	font-display: swap;
+	font-family: 'GeneralSans-Light';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/GeneralSans-Light.woff2') format('woff2'),
+		url('../fonts/GeneralSans-Light.woff') format('woff'),
+		url('../fonts/GeneralSans-Light.ttf') format('truetype');
 }
 
-#indicator.offline {
-    background-color: red;
+@font-face {
+	font-display: swap;	
+	font-family: 'GeneralSans-LightItalic';
+	font-style: italic;
+	font-weight: 300;
+	src: url('../fonts/GeneralSans-LightItalic.woff2') format('woff2'),
+		url('../fonts/GeneralSans-LightItalic.woff') format('woff'),
+		url('../fonts/GeneralSans-LightItalic.ttf') format('truetype');
 }
 
-#indicator.after-hours {
-    background-color: grey;
+@font-face {
+	font-display: swap;
+	font-family: 'GeneralSans-Regular';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/GeneralSans-Regular.woff2') format('woff2'),
+		url('../fonts/GeneralSans-Regular.woff') format('woff'),
+		url('../fonts/GeneralSans-Regular.ttf') format('truetype');
 }
 
-#time-display {
-    font-size: 16px;
-    font-weight: bold;
+@font-face {
+	font-display: swap;
+	font-family: 'GeneralSans-Italic';
+	font-style: italic;
+	font-weight: 400;
+	src: url('../fonts/GeneralSans-Italic.woff2') format('woff2'),
+		url('../fonts/GeneralSans-Italic.woff') format('woff'),
+		url('../fonts/GeneralSans-Italic.ttf') format('truetype');
 }
 
-.blinking-colon {
-    animation: blink-animation 1s steps(1) infinite;
+@font-face {
+	font-display: swap;
+	font-family: 'GeneralSans-Medium';
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/GeneralSans-Medium.woff2') format('woff2'),
+		url('../fonts/GeneralSans-Medium.woff') format('woff'),
+		url('../fonts/GeneralSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'GeneralSans-MediumItalic';
+	font-style: italic;
+	font-weight: 500;
+	src: url('../fonts/GeneralSans-MediumItalic.woff2') format('woff2'),
+		url('../fonts/GeneralSans-MediumItalic.woff') format('woff'),
+		url('../fonts/GeneralSans-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'GeneralSans-Semibold';
+	font-style: normal;
+	font-weight: 600;
+	src: url('../fonts/GeneralSans-Semibold.woff2') format('woff2'),
+		url('../fonts/GeneralSans-Semibold.woff') format('woff'),
+		url('../fonts/GeneralSans-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'GeneralSans-SemiboldItalic';
+	font-style: italic;
+	font-weight: 600;
+	src: url('../fonts/GeneralSans-SemiboldItalic.woff2') format('woff2'),
+		url('../fonts/GeneralSans-SemiboldItalic.woff') format('woff'),
+		url('../fonts/GeneralSans-SemiboldItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'GeneralSans-Bold';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/GeneralSans-Bold.woff2') format('woff2'),
+		url('../fonts/GeneralSans-Bold.woff') format('woff'),
+		url('../fonts/GeneralSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'GeneralSans-BoldItalic';
+	font-style: italic;
+	font-weight: 700;
+	src: url('../fonts/GeneralSans-BoldItalic.woff2') format('woff2'),
+		url('../fonts/GeneralSans-BoldItalic.woff') format('woff'),
+		url('../fonts/GeneralSans-BoldItalic.ttf') format('truetype');
+}
+
+/* css reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* structure */
+html {
+}
+
+body {
+	background: #ffffff;
+	color: #070B0E;
+	font-size: 16px;
+	line-height: 24px;
+	font-family: 'GeneralSans-Medium';
+	display: flex;
+	justify-content: center;
+	padding: 32px 0 32px 0;
+ }
+
+ .container {
+	width: 640px;
+	display: flex;
+	flex-direction: column;
+	gap: 96px;
+ }
+
+ main{
+	display: flex;
+	flex-direction: column;
+	gap: 96px;
+ }
+
+/* nav */
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-left, .nav-right {
+	display: flex;
+	align-items: center;
+  }
+
+  .nav-left {
+	justify-content: flex-start;
+	gap: 8px;
+  }
+
+  .nav-right {
+	justify-content: flex-end;
+	gap: 8px;
+  }
+
+.logo {
+	width: 114px;
+	height: auto;
+}
+
+/* live time */
+
+.indicator {
+	background-color: #34FF63;
+	border-radius: 50%;
+	height: 8px;
+	width: 8px;
+}
+
+.indicator.online {
+	background-color: #34FF63;
+}
+
+.indicator.after-hours {
+	background-color: #B4B4B4;
+}
+
+.hour, .minute, .blink, .timezone {
+	color: #6D7170;
+}
+
+.blink {
+	animation: blink-animation 1s steps(1) infinite;
 }
 
 @keyframes blink-animation {
-    50% {
-        opacity: 0;
-    }
+	50% {
+		opacity: 0;
+	}
 }
