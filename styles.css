@@ -407,8 +407,8 @@ nav {
 }
 
 .nav-logo {
-	height: auto;
-	width: 114px;
+	height: 14px;
+	width: auto;
 }
 
 .nav-indicator {
@@ -516,6 +516,7 @@ nav {
 	justify-content: center;
 	line-height: 1.2;
 	padding: 4px 8px;
+	text-transform: uppercase;
 }
 
 /* about */
