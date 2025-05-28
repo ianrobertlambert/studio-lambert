@@ -1,0 +1,7 @@
+[
+  { "file": "brand-half-width-1.jpg", "category": "brand", "title": "Brand Half 1", "description": "Lorem ipsum dolor sit amet.", "isWide": false },
+  { "file": "brand-half-width-2.jpg", "category": "brand", "title": "Brand Half 2", "description": "Consectetur adipiscing elit.", "isWide": false },
+  { "file": "brand-half-width-3.jpg", "category": "brand", "title": "Brand Half 3", "description": "Sed do eiusmod tempor incididunt.", "isWide": false },
+  { "file": "brand-full-width-1.jpg", "category": "brand", "title": "Brand Full 1", "description": "Ut labore et dolore magna aliqua.", "isWide": true },
+  { "file": "brand-full-width-2.jpg", "category": "brand", "title": "Brand Full 2", "description": "Ut enim ad minim veniam.", "isWide": true }
+]
