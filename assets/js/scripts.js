@@ -160,7 +160,7 @@ async function initializeLogoGrid() {
       cell.className = "logo__cell";
 
       const img = document.createElement("img");
-      img.alt = "Client Logo";
+      img.alt = "Client logo";
       img.loading = "lazy";
 
       cell.appendChild(img);
@@ -412,7 +412,7 @@ function renderWorkFeed() {
       const itemElement = document.createElement("div");
       itemElement.className = "image__item loading";
       const img = document.createElement("img");
-      img.alt = "Work Image";
+      img.alt = "Work image";
       img.loading = "lazy";
       img.dataset.src = item.src;
       img.onerror = function () {
