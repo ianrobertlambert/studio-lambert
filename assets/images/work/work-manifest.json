@@ -6,7 +6,6 @@
   { "file": "product-exclaimer-full-width-05.jpg", "category": "product", "title": "Exclaimer",    "description": "Product", "isWide": true },
   { "file": "product-exclaimer-full-width-06.jpg", "category": "product", "title": "Exclaimer",    "description": "Product", "isWide": true },
   { "file": "product-exclaimer-full-width-07.jpg", "category": "product", "title": "Exclaimer",    "description": "Product", "isWide": true },
-  { "file": "product-exclaimer-full-width-08.jpg", "category": "product", "title": "Exclaimer",    "description": "Product", "isWide": true },
   { "file": "product-exclaimer-half-width-01.jpg", "category": "product", "title": "Exclaimer",    "description": "Product", "isWide": false },
   { "file": "product-pluuto-full-width-01.jpg",   "category": "product", "title": "Pluuto",       "description": "Product", "isWide": true },
   { "file": "product-pluuto-full-width-02.jpg",   "category": "product", "title": "Pluuto",       "description": "Product", "isWide": true },
