@@ -1,43 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Studio Lambert – Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/assets/css/styles.css" />
-    <script async src="https://tally.so/widgets/embed.js"></script>
-    <link rel="icon" href="/assets/meta/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/meta/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/meta/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/meta/favicon-16x16.png" />
-    <link rel="mask-icon" href="/assets/meta/safari-pinned-tab.svg" color="#070B0E" />
-    <meta name="msapplication-TileImage" content="/assets/meta/mstile-150x150.png" />
-    <meta name="theme-color" content="#FFFFFF" />
-    <link rel="manifest" href="/assets/meta/site.webmanifest" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.studiolambert.co/" />
-    <meta property="og:title" content="Studio Lambert – A product design studio." />
-    <meta property="og:description" content="Shaping products, websites and brands – with clarity, with care, with you." />
-    <meta property="og:image" content="https://www.studiolambert.co/assets/meta/opengraph.jpg" />
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://www.studiolambert.co/" />
-    <meta property="twitter:title" content="Studio Lambert – A product design studio." />
-    <meta property="twitter:description" content="Shaping products, websites and brands – with clarity, with care, with you." />
-    <meta property="twitter:image" content="https://www.studiolambert.co/assets/meta/opengraph.jpg" />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BSEW5EEMT"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-2BSEW5EEMT");
-    </script>
-  </head>
-  <body id="top">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio Lambert – Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <script async src="https://tally.so/widgets/embed.js"></script>
+  <link rel="icon" href="/assets/meta/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/meta/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/meta/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/meta/favicon-16x16.png" />
+  <link rel="mask-icon" href="/assets/meta/safari-pinned-tab.svg" color="#070B0E" />
+  <meta name="msapplication-TileImage" content="/assets/meta/mstile-150x150.png" />
+  <meta name="theme-color" content="#FFFFFF" />
+  <link rel="manifest" href="/assets/meta/site.webmanifest" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.studiolambert.co/" />
+  <meta property="og:title" content="Studio Lambert – A product design studio." />
+  <meta property="og:description"
+    content="Shaping products, websites and brands – with clarity, with care, with you." />
+  <meta property="og:image" content="https://www.studiolambert.co/assets/meta/opengraph.jpg" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://www.studiolambert.co/" />
+  <meta property="twitter:title" content="Studio Lambert – A product design studio." />
+  <meta property="twitter:description"
+    content="Shaping products, websites and brands – with clarity, with care, with you." />
+  <meta property="twitter:image" content="https://www.studiolambert.co/assets/meta/opengraph.jpg" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BSEW5EEMT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-2BSEW5EEMT");
+  </script>
+</head>
+
+<body id="top">
+  <header class="header">
+    <div class="container">
+      <div class="grid">
+        <div class="col-span-1">
+          <div class="header__logo">
+            <a href="/">
+              <img src="/assets/images/logo.svg" alt="Studio Lambert logo" class="header__logo-img" />
+            </a>
+          </div>
+        </div>
+        <div class="col-span-1 header__time">
+          <span class="header__status"></span>
+          <p id="time-current">
+            <span id="hours">--</span>
+            <span class="blink">:</span>
+            <span id="minutes">--</span>
+            <span class="blink">:</span>
+            <span id="seconds">--</span>
+            France
+          </p>
+        </div>
+        <nav class="col-span-1 header__nav">
+          <ul class="header__nav">
+            <li>
+              <a href="/work/">Work</a>
+            </li>
+            <li>Studio</li>
+          </ul>
+        </nav>
+        <div class="col-span-1 header__contact">
+          <a href="#" data-tally-open="mVdZpg" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Get
+            started</a>
+        </div>
+        <div class="col-span-1 header__actions">
+          <a href="#" data-tally-open="mVdZpg" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Get
+            started</a>
+          <span class="separator">·</span>
+          <a href="#" class="menu__toggle">Menu</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="menu__overlay" id="menu-overlay">
     <header class="header">
       <div class="container">
         <div class="grid">
@@ -48,449 +95,48 @@
               </a>
             </div>
           </div>
-          <div class="col-span-1 header__time">
-            <span class="header__status"></span>
-            <p id="time-current">
-              <span id="hours">--</span>
-              <span class="blink">:</span>
-              <span id="minutes">--</span>
-              <span class="blink">:</span>
-              <span id="seconds">--</span>
-              France
-            </p>
-          </div>
-          <nav class="col-span-1 header__nav">
-            <ul class="header__nav">
-              <li>
-                <a href="/work/">Work</a>
-              </li>
-              <li>Studio</li>
-            </ul>
-          </nav>
-          <div class="col-span-1 header__contact">
-            <a href="#" data-tally-open="mVdZpg" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Get started</a>
-          </div>
           <div class="col-span-1 header__actions">
-            <a href="#" data-tally-open="mVdZpg" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Get started</a>
+            <a href="#" data-tally-open="mVdZpg" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Get
+              started</a>
             <span class="separator">·</span>
             <a href="#" class="menu__toggle">Menu</a>
           </div>
         </div>
       </div>
     </header>
-    <div class="menu__overlay" id="menu-overlay">
-      <header class="header">
-        <div class="container">
-          <div class="grid">
-            <div class="col-span-1">
-              <div class="header__logo">
-                <a href="/">
-                  <img src="/assets/images/logo.svg" alt="Studio Lambert logo" class="header__logo-img" />
-                </a>
-              </div>
-            </div>
-            <div class="col-span-1 header__actions">
-              <a href="#" data-tally-open="mVdZpg" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Get started</a>
-              <span class="separator">·</span>
-              <a href="#" class="menu__toggle">Menu</a>
-            </div>
-          </div>
-        </div>
-      </header>
-      <main class="main">
-        <div class="container">
-          <section class="section">
-            <div class="grid">
-              <div class="col-span-3">
-                <h1 class="text--light text--jumbo">
-                  <a href="/" class="text--light">Home</a>
-                </h1>
-                <h1 class="text--light text--jumbo">
-                  <a href="/work/" class="text--light">Work</a>
-                </h1>
-                <h1 class="text--light text--jumbo">Studio</h1>
-                <h1 class="text--light text--jumbo">
-                  <a href="#" class="text--light" data-tally-open="mVdZpg" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Get started</a>
-                </h1>
-              </div>
-            </div>
-          </section>
-        </div>
-      </main>
-      <div class="footer">
-        <div class="container">
-          <section class="section">
-            <hr class="section-separator section-separator--light" />
-            <div class="grid mt-base">
-              <div class="col-span-3">
-                <h1>Interested in working with us?</h1>
-                <h1>
-                  <span class="text--subtle">We're always looking to start new conversations.</span>
-                </h1>
-                <button class="button button--light" data-tally-open="mVdZpg" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Get started</button>
-              </div>
-            </div>
-          </section>
-          <section class="section">
-            <hr class="section-separator section-separator--light" />
-            <div class="grid mt-base">
-              <div class="col-span-1">
-                <h3>Connect</h3>
-              </div>
-              <div class="col-start-3 col-span-1">
-                <p>
-                  <a href="https://instagram.com/_studiolambert_" target="_blank" class="text--light">Instagram</a>
-                </p>
-                <p>
-                  <a href="https://linkedin.com/company/studiolambert" target="_blank" class="text--light">LinkedIn</a>
-                </p>
-                <p>
-                  <a href="https://twitter.com/_studiolambert_" target="_blank" class="text--light">Twitter</a>
-                </p>
-              </div>
-            </div>
-          </section>
-          <section class="section">
-            <hr class="section-separator section-separator--light" />
-            <div class="grid mt-base">
-              <div class="col-span-1">
-                <h3>Studio</h3>
-              </div>
-              <div class="col-start-3 col-span-1">
-                <p>
-                  <a href="mailto:hello@studiolambert.co" class="text--light">hello@studiolambert.co</a>
-                </p>
-                <p>
-                  <a href="tel:+33621086952" class="text--light">+33 06 21 08 69 52</a>
-                </p>
-                <p>
-                  904 Boulevard Christian Lafon
-                  <br />
-                  83700, Saint-Raphël
-                  <br />
-                  France
-                </p>
-              </div>
-            </div>
-          </section>
-          <section class="section">
-            <hr class="section-separator section-separator--light" />
-            <div class="grid mt-base">
-              <div class="col-span-3">
-                <p class="text--subtle">
-                  ©
-                  <span class="copyright-year">2025</span>
-                  Studio Lambert
-                  <span class="separator">·</span>
-                  Made with love in France
-                </p>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
-    </div>
     <main class="main">
       <div class="container">
-        <section class="section reveal">
+        <section class="section">
           <div class="grid">
             <div class="col-span-3">
-              <h1>We bring shape to complex ideas – designing products, brands, and websites that resonate with clarity.</h1>
+              <h1 class="text--light text--jumbo">
+                <a href="/" class="text--light">Home</a>
+              </h1>
+              <h1 class="text--light text--jumbo">
+                <a href="/work/" class="text--light">Work</a>
+              </h1>
+              <h1 class="text--light text--jumbo">Studio</h1>
+              <h1 class="text--light text--jumbo">
+                <a href="#" class="text--light" data-tally-open="mVdZpg" data-tally-emoji-text="👋"
+                  data-tally-emoji-animation="wave">Get started</a>
+              </h1>
             </div>
           </div>
-        </section>
-        <section class="section reveal">
-          <hr class="section-separator" />
-          <div class="grid mt-base">
-            <div class="col-span-1">
-              <h3>Services</h3>
-            </div>
-            <div class="col-start-3 col-span-1">
-              <p>Our work spans digital product, brand, and web – each approached with the same intent and depth. We design for cohesion, so what you launch feels considered and ready to grow.</p>
-            </div>
-          </div>
-          <div class="accordion__group mt-64">
-            <div class="accordion">
-              <div class="grid accordion__item open" data-accordion__item>
-                <div class="col-span-1">
-                  <button class="accordion__toggle" aria-expanded="false">
-                    <img src="/assets/icons/plus.svg" alt="Expand" />
-                  </button>
-                </div>
-                <div class="col-span-1 accordion-title">
-                  <h3>Product</h3>
-                </div>
-                <div class="col-span-1">
-                  <div class="accordion__content">
-                    <p>We help teams shape, refine, and scale digital products – from first idea to fully realised experience.</p>
-                    <ul class="list">
-                      <li class="list__item">Product and design strategy</li>
-                      <li class="list__item">UX design</li>
-                      <li class="list__item">UI design</li>
-                      <li class="list__item">Prototyping</li>
-                      <li class="list__item">Design systems</li>
-                      <li class="list__item">Analytics and optimisation</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="grid accordion__item" data-accordion__item>
-                <div class="col-span-1">
-                  <button class="accordion__toggle" aria-expanded="false">
-                    <img src="/assets/icons/plus.svg" alt="Expand" />
-                  </button>
-                </div>
-                <div class="col-span-1 accordion-title">
-                  <h3>Web</h3>
-                </div>
-                <div class="col-span-1">
-                  <div class="accordion__content">
-                    <p>Clear, purpose-led websites that connect product and brand – and drive action.</p>
-                    <ul class="list">
-                      <li class="list__item">Marketing websites</li>
-                      <li class="list__item">Landing pages</li>
-                      <li class="list__item">Conversion optimisation</li>
-                      <li class="list__item">Web audits and refinement</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="grid accordion__item" data-accordion__item>
-                <div class="col-span-1">
-                  <button class="accordion__toggle" aria-expanded="false">
-                    <img src="/assets/icons/plus.svg" alt="Expand" />
-                  </button>
-                </div>
-                <div class="col-span-1 accordion-title">
-                  <h3>Brand</h3>
-                </div>
-                <div class="col-span-1">
-                  <div class="accordion__content">
-                    <p>Flexible, enduring identities that evolve with the product and support your story.</p>
-                    <ul class="list">
-                      <li class="list__item">Naming</li>
-                      <li class="list__item">Brand identities</li>
-                      <li class="list__item">Identity systems</li>
-                      <li class="list__item">Brand assets</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section reveal">
-          <div class="grid logo__grid"></div>
-        </section>
-        <section class="section reveal">
-          <hr class="section-separator" />
-          <div class="grid mt-base">
-            <div class="col-span-1">
-              <h3>Engagement models</h3>
-            </div>
-          </div>
-          <div class="grid mt-base">
-            <div class="col-span-3">
-              <h2>Two ways to work together – straightforward and built to fit different needs.</h2>
-              <button class="button" data-tally-open="mVdZpg" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Get started</button>
-            </div>
-          </div>
-          <div class="accordion__group mt-64">
-            <div class="accordion">
-              <div class="grid accordion__item" data-accordion__item>
-                <div class="col-span-1">
-                  <button class="accordion__toggle" aria-expanded="false">
-                    <img src="/assets/icons/plus.svg" alt="Expand" />
-                  </button>
-                </div>
-                <div class="col-span-1 accordion-title">
-                  <h3>
-                    Immersive
-                    <span class="separator">·</span>
-                    <span class="text--subtle">Monthly</span>
-                  </h3>
-                </div>
-                <div class="col-start-3 col-span-2">
-                  <div class="accordion__content">
-                    <h3 class="mb-base">For teams seeking an embedded design partner.</h3>
-                    <p>We work in a steady weekly cadence, with direct access and shared context built in from day one. The scope stays flexible across product, web, and brand – so we can focus where it matters most.</p>
-                    <p>We stay closely connected, but work happens with intention. Most collaboration flows asynchronously – leaving space to think, design, and build well.</p>
-                    <p>It’s ideal for ongoing product evolution, multi-surface design and building internal design maturity.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="grid accordion__item" data-accordion__item>
-                <div class="col-span-1">
-                  <button class="accordion__toggle" aria-expanded="false">
-                    <img src="/assets/icons/plus.svg" alt="Expand" />
-                  </button>
-                </div>
-                <div class="col-span-1 accordion-title">
-                  <h3>
-                    Sprint
-                    <span class="separator">·</span>
-                    <span class="text--subtle">Two-weeks</span>
-                  </h3>
-                </div>
-                <div class="col-start-3 col-span-2">
-                  <div class="accordion__content">
-                    <h3 class="mb-base">For focused, high-impact work with one clear goal.</h3>
-                    <p>Each sprint is a short, intentional engagement designed to move one thing forward – whether it’s refining a product feature, designing an MVP or launching a new web page.</p>
-                    <p>The timeline is tight but considered, with space for thoughtful collaboration and room to craft with care.</p>
-                    <p>It’s ideal for pivotal moments – when something needs to shift, and you want to do it with care.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section reveal">
-          <hr class="section-separator" />
-          <div class="grid mt-base">
-            <div class="col-span-1">
-              <h3>Testimonials</h3>
-            </div>
-          </div>
-          <div class="grid mt-base">
-            <div class="col-span-3">
-              <h2 class="text--soon">Coming soon</h2>
-            </div>
-          </div>
-        </section>     
-
-        <section class="section reveal">
-          <div class="image__row half-width">
-            <div class="image__item">
-              <img src="/assets/images/studio-01.jpg" alt="Office" />
-            </div>
-            <div class="image__item">
-              <img src="/assets/images/studio-02.jpg" alt="Team" />
-            </div>
-          </div>
-        </section>
-        <section class="section reveal">
-          <hr class="section-separator" />
-          <div class="grid mt-base">
-            <div class="col-span-1">
-              <h3>Approach</h3>
-            </div>
-          </div>
-          <div class="grid mt-base">
-            <div class="col-span-3">
-              <h2>We believe design is a connective force—between people, ideas, and the world around us.</h2>
-            </div>
-          </div>
-          <div class="grid mt-64">
-            <div class="col-start-3 col-span-1">
-              <p>Taste guides what we do. Not just what to build, but why it matters. Not just in how it looks, but in how it earns trust.</p>
-              <p>It shapes what we pursue, what we leave out, and how we make things feel just right.</p>
-              <p>At Studio Lambert, design is thoughtful – not decorative. It listens before it speaks. It’s quiet, but clear.</p>
-              <p>This is a space to make, play, and explore – led by curiosity, shaped with care, and built to last.</p>
-              <p>This is how we move: with clarity, with care, with you.</p>
-            </div>
-          </div>
-          <div class="accordion__group mt-64">
-            <div class="accordion">
-              <div class="grid accordion__item" data-accordion__item>
-                <div class="col-span-1">
-                  <button class="accordion__toggle" aria-expanded="false">
-                    <img src="/assets/icons/plus.svg" alt="Expand" />
-                  </button>
-                </div>
-                <div class="col-span-1 accordion-title">
-                  <h3>Values</h3>
-                </div>
-                <div class="col-start-3 col-span-2">
-                  <div class="accordion__content">
-                    <p>Our values shape how we work and where we focus our energy.</p>
-                    <h3>We do things with love. Always.</h3>
-                    <p class="text--subtle">Passion is our driver, love is our fuel.</p>
-                    <h3>We think long term.</h3>
-                    <p class="text--subtle">What we design should hold up, and hold meaning.</p>
-                    <h3>We let curiosity lead.</h3>
-                    <p class="text--subtle">Questions move us forward. We stay open.</p>
-                    <h3>We make, play, explore.</h3>
-                    <p class="text--subtle">We learn by doing. We grow by trying.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="grid accordion__item" data-accordion__item>
-                <div class="col-span-1">
-                  <button class="accordion__toggle" aria-expanded="false">
-                    <img src="/assets/icons/plus.svg" alt="Expand" />
-                  </button>
-                </div>
-                <div class="col-span-1 accordion-title">
-                  <h3>Process</h3>
-                </div>
-                <div class="col-start-3 col-span-2">
-                  <div class="accordion__content">
-                    <p>Everything starts with questions. What are we building? Why now? What does success look like? From there, we move – from understanding to structure, from ideas to execution.</p>
-                    <h3>Understand</h3>
-                    <p class="text--subtle">We start by defining the problem – asking the right questions, mapping context, and aligning on what matters.</p>
-                    <h3>Discover</h3>
-                    <p class="text--subtle">We explore references, test directions, and uncover what’s working (and what’s not). This is about finding direction, not decoration.</p>
-                    <h3>Ideate</h3>
-                    <p class="text--subtle">We generate, refine, and shape. The best ideas rise through sharp iteration, not overthinking.</p>
-                    <h3>Execute</h3>
-                    <p class="text--subtle">We narrow in, raise the bar, and deliver work that holds up. Polish is important, but so is purpose. We ship work you can build on.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="grid accordion__item" data-accordion__item>
-                <div class="col-span-1">
-                  <button class="accordion__toggle" aria-expanded="false">
-                    <img src="/assets/icons/plus.svg" alt="Expand" />
-                  </button>
-                </div>
-                <div class="col-span-1 accordion-title">
-                  <h3>What to expect</h3>
-                </div>
-                <div class="col-start-3 col-span-2">
-                  <div class="accordion__content">
-                    <p>Working with us is steady, thoughtful, and clear. We move at a pace that respects the work – and the people doing it.</p>
-                    <p>We keep things simple: a clear rhythm, direct access, and shared context that makes collaboration feel natural. No layers. No handoffs. Just transparent, open communication.</p>
-                    <p>We care about the why, not just the what. We’ll help you challenge assumptions, rethink when needed, and move with purpose.</p>
-                    <p>Good work takes taste and restraint. We bring clarity to every decision. It’s about knowing where to focus – building something that lasts, and doing it with care.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section reveal">
-          <hr class="section-separator" />
-          <div class="grid mt-base">
-            <div class="col-span-1">
-              <h3>Who we are</h3>
-            </div>
-            <div class="col-start-3 col-span-1">
-              <p>Studio Lambert was founded by Ian Lambert, a product designer with over 12 years of experience shaping thoughtful digital products.</p>
-              <p>Before starting the studio, Ian led design at startups and scaleups across the US and Europe – helping early ideas grow into trusted businesses.</p>
-              <p>Today, we’re a deliberately small, senior team based in the south of France. We work closely with teams around the world, scaling with care and bringing in trusted collaborators when needed. Each partnership is tailored to you. To what you’re building. To where you’re going.</p>
-            </div>
-          </div>
-        <div class="grid media__group mt-64">
-          <div class="col-start-3 col-span-1 media__item">
-            <img src="/assets/images/studio-03.jpg" alt="Ian Lambert" class="media-image" />
-            <p class="media__title">Ian Lambert</p>
-            <p class="media__description">Founder</p>
-          </div>
-        </div>
         </section>
       </div>
     </main>
-    <footer class="footer">
+    <div class="footer">
       <div class="container">
         <section class="section">
+          <hr class="section-separator section-separator--light" />
           <div class="grid mt-base">
             <div class="col-span-3">
               <h1>Interested in working with us?</h1>
               <h1>
                 <span class="text--subtle">We're always looking to start new conversations.</span>
               </h1>
-              <button class="button button--light" data-tally-open="mVdZpg" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Get started</button>
+              <button class="button button--light" data-tally-open="mVdZpg" data-tally-emoji-text="👋"
+                data-tally-emoji-animation="wave">Get started</button>
             </div>
           </div>
         </section>
@@ -548,15 +194,403 @@
                 Made with love in France
               </p>
             </div>
-            <div class="col-span-1 footer__back-to-top">
-              <p>
-                <a href="#top" class="footer__back-to-top light">Back to top</a>
-              </p>
-            </div>
           </div>
         </section>
       </div>
-    </footer>
-    <script src="/assets/js/scripts.js"></script>
-  </body>
+    </div>
+  </div>
+  <main class="main">
+    <div class="container">
+      <section class="section reveal">
+        <div class="grid">
+          <div class="col-span-3">
+            <h1>We bring shape to complex ideas – designing products, brands, and websites that resonate with clarity.
+            </h1>
+          </div>
+        </div>
+      </section>
+      <section class="section reveal">
+        <hr class="section-separator" />
+        <div class="grid mt-base">
+          <div class="col-span-1">
+            <h3>Services</h3>
+          </div>
+          <div class="col-start-3 col-span-1">
+            <p>Our work spans digital product, brand, and web – each approached with the same intent and depth. We
+              design for cohesion, so what you launch feels considered and ready to grow.</p>
+          </div>
+        </div>
+        <div class="accordion__group mt-64">
+          <div class="accordion">
+            <div class="grid accordion__item open" data-accordion__item>
+              <div class="col-span-1">
+                <button class="accordion__toggle" aria-expanded="false">
+                  <img src="/assets/icons/plus.svg" alt="Expand" />
+                </button>
+              </div>
+              <div class="col-span-1 accordion-title">
+                <h3>Product</h3>
+              </div>
+              <div class="col-span-1">
+                <div class="accordion__content">
+                  <p>We help teams shape, refine, and scale digital products – from first idea to fully realised
+                    experience.</p>
+                  <ul class="list">
+                    <li class="list__item">Product and design strategy</li>
+                    <li class="list__item">UX design</li>
+                    <li class="list__item">UI design</li>
+                    <li class="list__item">Prototyping</li>
+                    <li class="list__item">Design systems</li>
+                    <li class="list__item">Analytics and optimisation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="grid accordion__item" data-accordion__item>
+              <div class="col-span-1">
+                <button class="accordion__toggle" aria-expanded="false">
+                  <img src="/assets/icons/plus.svg" alt="Expand" />
+                </button>
+              </div>
+              <div class="col-span-1 accordion-title">
+                <h3>Web</h3>
+              </div>
+              <div class="col-span-1">
+                <div class="accordion__content">
+                  <p>Clear, purpose-led websites that connect product and brand – and drive action.</p>
+                  <ul class="list">
+                    <li class="list__item">Marketing websites</li>
+                    <li class="list__item">Landing pages</li>
+                    <li class="list__item">Conversion optimisation</li>
+                    <li class="list__item">Web audits and refinement</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="grid accordion__item" data-accordion__item>
+              <div class="col-span-1">
+                <button class="accordion__toggle" aria-expanded="false">
+                  <img src="/assets/icons/plus.svg" alt="Expand" />
+                </button>
+              </div>
+              <div class="col-span-1 accordion-title">
+                <h3>Brand</h3>
+              </div>
+              <div class="col-span-1">
+                <div class="accordion__content">
+                  <p>Flexible, enduring identities that evolve with the product and support your story.</p>
+                  <ul class="list">
+                    <li class="list__item">Naming</li>
+                    <li class="list__item">Brand identities</li>
+                    <li class="list__item">Identity systems</li>
+                    <li class="list__item">Brand assets</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section reveal">
+        <div class="grid logo__grid"></div>
+      </section>
+      <section class="section reveal">
+        <hr class="section-separator" />
+        <div class="grid mt-base">
+          <div class="col-span-1">
+            <h3>Engagement models</h3>
+          </div>
+        </div>
+        <div class="grid mt-base">
+          <div class="col-span-3">
+            <h2>Two ways to work together – straightforward and built to fit different needs.</h2>
+            <button class="button" data-tally-open="mVdZpg" data-tally-emoji-text="👋"
+              data-tally-emoji-animation="wave">Get started</button>
+          </div>
+        </div>
+        <div class="accordion__group mt-64">
+          <div class="accordion">
+            <div class="grid accordion__item" data-accordion__item>
+              <div class="col-span-1">
+                <button class="accordion__toggle" aria-expanded="false">
+                  <img src="/assets/icons/plus.svg" alt="Expand" />
+                </button>
+              </div>
+              <div class="col-span-1 accordion-title">
+                <h3>
+                  Immersive
+                  <span class="separator">·</span>
+                  <span class="text--subtle">Monthly</span>
+                </h3>
+              </div>
+              <div class="col-start-3 col-span-2">
+                <div class="accordion__content">
+                  <h3 class="mb-base">For teams seeking an embedded design partner.</h3>
+                  <p>We work in a steady weekly cadence, with direct access and shared context built in from day one.
+                    The scope stays flexible across product, web, and brand – so we can focus where it matters most.</p>
+                  <p>We stay closely connected, but work happens with intention. Most collaboration flows asynchronously
+                    – leaving space to think, design, and build well.</p>
+                  <p>It’s ideal for ongoing product evolution, multi-surface design and building internal design
+                    maturity.</p>
+                </div>
+              </div>
+            </div>
+            <div class="grid accordion__item" data-accordion__item>
+              <div class="col-span-1">
+                <button class="accordion__toggle" aria-expanded="false">
+                  <img src="/assets/icons/plus.svg" alt="Expand" />
+                </button>
+              </div>
+              <div class="col-span-1 accordion-title">
+                <h3>
+                  Sprint
+                  <span class="separator">·</span>
+                  <span class="text--subtle">Two-weeks</span>
+                </h3>
+              </div>
+              <div class="col-start-3 col-span-2">
+                <div class="accordion__content">
+                  <h3 class="mb-base">For focused, high-impact work with one clear goal.</h3>
+                  <p>Each sprint is a short, intentional engagement designed to move one thing forward – whether it’s
+                    refining a product feature, designing an MVP or launching a new web page.</p>
+                  <p>The timeline is tight but considered, with space for thoughtful collaboration and room to craft
+                    with care.</p>
+                  <p>It’s ideal for pivotal moments – when something needs to shift, and you want to do it with care.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section reveal">
+        <hr class="section-separator" />
+        <div class="grid mt-base">
+          <div class="col-span-1">
+            <h3>Testimonials</h3>
+          </div>
+        </div>
+        <div class="grid mt-base">
+          <div class="col-span-3">
+            <h2 class="text--soon">Coming soon</h2>
+          </div>
+        </div>
+      </section>
+      <section class="section reveal">
+        <div class="image__row half-width">
+          <div class="image__item">
+            <img src="/assets/images/studio-01.jpg" alt="Office" />
+          </div>
+          <div class="image__item">
+            <img src="/assets/images/studio-02.jpg" alt="Team" />
+          </div>
+        </div>
+      </section>
+      <section class="section reveal">
+        <hr class="section-separator" />
+        <div class="grid mt-base">
+          <div class="col-span-1">
+            <h3>Approach</h3>
+          </div>
+        </div>
+        <div class="grid mt-base">
+          <div class="col-span-3">
+            <h2>We believe design is a connective force—between people, ideas, and the world around us.</h2>
+          </div>
+        </div>
+        <div class="grid mt-64">
+          <div class="col-start-3 col-span-1">
+            <p>Taste guides what we do. Not just what to build, but why it matters. Not just in how it looks, but in how
+              it earns trust.</p>
+            <p>It shapes what we pursue, what we leave out, and how we make things feel just right.</p>
+            <p>At Studio Lambert, design is thoughtful – not decorative. It listens before it speaks. It’s quiet, but
+              clear.</p>
+            <p>This is a space to make, play, and explore – led by curiosity, shaped with care, and built to last.</p>
+            <p>This is how we move: with clarity, with care, with you.</p>
+          </div>
+        </div>
+        <div class="accordion__group mt-64">
+          <div class="accordion">
+            <div class="grid accordion__item" data-accordion__item>
+              <div class="col-span-1">
+                <button class="accordion__toggle" aria-expanded="false">
+                  <img src="/assets/icons/plus.svg" alt="Expand" />
+                </button>
+              </div>
+              <div class="col-span-1 accordion-title">
+                <h3>Values</h3>
+              </div>
+              <div class="col-start-3 col-span-2">
+                <div class="accordion__content">
+                  <p>Our values shape how we work and where we focus our energy.</p>
+                  <h3>We do things with love. Always.</h3>
+                  <p class="text--subtle">Passion is our driver, love is our fuel.</p>
+                  <h3>We think long term.</h3>
+                  <p class="text--subtle">What we design should hold up, and hold meaning.</p>
+                  <h3>We let curiosity lead.</h3>
+                  <p class="text--subtle">Questions move us forward. We stay open.</p>
+                  <h3>We make, play, explore.</h3>
+                  <p class="text--subtle">We learn by doing. We grow by trying.</p>
+                </div>
+              </div>
+            </div>
+            <div class="grid accordion__item" data-accordion__item>
+              <div class="col-span-1">
+                <button class="accordion__toggle" aria-expanded="false">
+                  <img src="/assets/icons/plus.svg" alt="Expand" />
+                </button>
+              </div>
+              <div class="col-span-1 accordion-title">
+                <h3>Process</h3>
+              </div>
+              <div class="col-start-3 col-span-2">
+                <div class="accordion__content">
+                  <p>Everything starts with questions. What are we building? Why now? What does success look like? From
+                    there, we move – from understanding to structure, from ideas to execution.</p>
+                  <h3>Understand</h3>
+                  <p class="text--subtle">We start by defining the problem – asking the right questions, mapping
+                    context, and aligning on what matters.</p>
+                  <h3>Discover</h3>
+                  <p class="text--subtle">We explore references, test directions, and uncover what’s working (and what’s
+                    not). This is about finding direction, not decoration.</p>
+                  <h3>Ideate</h3>
+                  <p class="text--subtle">We generate, refine, and shape. The best ideas rise through sharp iteration,
+                    not overthinking.</p>
+                  <h3>Execute</h3>
+                  <p class="text--subtle">We narrow in, raise the bar, and deliver work that holds up. Polish is
+                    important, but so is purpose. We ship work you can build on.</p>
+                </div>
+              </div>
+            </div>
+            <div class="grid accordion__item" data-accordion__item>
+              <div class="col-span-1">
+                <button class="accordion__toggle" aria-expanded="false">
+                  <img src="/assets/icons/plus.svg" alt="Expand" />
+                </button>
+              </div>
+              <div class="col-span-1 accordion-title">
+                <h3>What to expect</h3>
+              </div>
+              <div class="col-start-3 col-span-2">
+                <div class="accordion__content">
+                  <p>Working with us is steady, thoughtful, and clear. We move at a pace that respects the work – and
+                    the people doing it.</p>
+                  <p>We keep things simple: a clear rhythm, direct access, and shared context that makes collaboration
+                    feel natural. No layers. No handoffs. Just transparent, open communication.</p>
+                  <p>We care about the why, not just the what. We’ll help you challenge assumptions, rethink when
+                    needed, and move with purpose.</p>
+                  <p>Good work takes taste and restraint. We bring clarity to every decision. It’s about knowing where
+                    to focus – building something that lasts, and doing it with care.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section reveal">
+        <hr class="section-separator" />
+        <div class="grid mt-base">
+          <div class="col-span-1">
+            <h3>Who we are</h3>
+          </div>
+          <div class="col-start-3 col-span-1">
+            <p>Studio Lambert was founded by Ian Lambert, a product designer with over 12 years of experience shaping
+              thoughtful digital products.</p>
+            <p>Before starting the studio, Ian led design at startups and scaleups across the US and Europe – helping
+              early ideas grow into trusted businesses.</p>
+            <p>Today, we’re a deliberately small, senior team based in the south of France. We work closely with teams
+              around the world, scaling with care and bringing in trusted collaborators when needed. Each partnership is
+              tailored to you. To what you’re building. To where you’re going.</p>
+          </div>
+        </div>
+        <div class="grid media__group mt-64">
+          <div class="col-start-3 col-span-1 media__item">
+            <img src="/assets/images/studio-03.jpg" alt="Ian Lambert" class="media-image" />
+            <p class="media__title">Ian Lambert</p>
+            <p class="media__description">Founder</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <section class="section">
+        <div class="grid mt-base">
+          <div class="col-span-3">
+            <h1>Interested in working with us?</h1>
+            <h1>
+              <span class="text--subtle">We're always looking to start new conversations.</span>
+            </h1>
+            <button class="button button--light" data-tally-open="mVdZpg" data-tally-emoji-text="👋"
+              data-tally-emoji-animation="wave">Get started</button>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <hr class="section-separator section-separator--light" />
+        <div class="grid mt-base">
+          <div class="col-span-1">
+            <h3>Connect</h3>
+          </div>
+          <div class="col-start-3 col-span-1">
+            <p>
+              <a href="https://instagram.com/_studiolambert_" target="_blank" class="text--light">Instagram</a>
+            </p>
+            <p>
+              <a href="https://linkedin.com/company/studiolambert" target="_blank" class="text--light">LinkedIn</a>
+            </p>
+            <p>
+              <a href="https://twitter.com/_studiolambert_" target="_blank" class="text--light">Twitter</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <hr class="section-separator section-separator--light" />
+        <div class="grid mt-base">
+          <div class="col-span-1">
+            <h3>Studio</h3>
+          </div>
+          <div class="col-start-3 col-span-1">
+            <p>
+              <a href="mailto:hello@studiolambert.co" class="text--light">hello@studiolambert.co</a>
+            </p>
+            <p>
+              <a href="tel:+33621086952" class="text--light">+33 06 21 08 69 52</a>
+            </p>
+            <p>
+              904 Boulevard Christian Lafon
+              <br />
+              83700, Saint-Raphël
+              <br />
+              France
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <hr class="section-separator section-separator--light" />
+        <div class="grid mt-base">
+          <div class="col-span-3">
+            <p class="text--subtle">
+              ©
+              <span class="copyright-year">2025</span>
+              Studio Lambert
+              <span class="separator">·</span>
+              Made with love in France
+            </p>
+          </div>
+          <div class="col-span-1 footer__back-to-top">
+            <p>
+              <a href="#top" class="footer__back-to-top light">Back to top</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </footer>
+  <script src="/assets/js/scripts.js"></script>
+</body>
+
 </html>
