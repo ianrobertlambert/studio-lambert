@@ -367,6 +367,10 @@ h3 {
   color: var(--color-grey-60);
 }
 
+.text--soon {
+  color: var(--color-grey-40);
+}
+
 .text--jumbo {
   font-size: var(--size-64);
   line-height: var(--size-72);
@@ -890,7 +894,7 @@ a.light:hover {
   margin-top: var(--size-0);
 }
 
-.media__date {
+.media__description {
   color: var(--color-grey-60);
   margin-top: var(--size-0);
 }
