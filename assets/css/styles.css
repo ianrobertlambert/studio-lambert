@@ -877,7 +877,7 @@ a.light:hover {
   opacity: var(--size-0);
 }
 
-.news__image {
+.media-image {
   border-radius: var(--size-base);
   display: block;
   height: auto;
