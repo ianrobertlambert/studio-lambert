@@ -261,7 +261,7 @@ async function initializeWorkFeed() {
       category: item.category,
       title: item.title,
       description: item.description,
-      isWide: item.isWide,
+      isLandscape: item.isLandscape,
     }));
     workFeedState.items = loadedItems;
     workFeedState.filteredItems = shuffleArray([...workFeedState.items]);
@@ -272,11 +272,11 @@ async function initializeWorkFeed() {
 
     for (let i = 0; i < itemsForRows.length; i++) {
       const item = itemsForRows[i];
-      if (item.isWide) {
-        allRows.push({ type: "full-width", items: [item] });
-      } else if (i + 1 < itemsForRows.length && !itemsForRows[i + 1].isWide) {
+      if (item.isLandscape) {
+        allRows.push({ type: "landscape", items: [item] });
+      } else if (i + 1 < itemsForRows.length && !itemsForRows[i + 1].isLandscape) {
         allRows.push({
-          type: "half-width",
+          type: "square",
           items: [item, itemsForRows[i + 1]],
         });
         i++;
@@ -288,11 +288,11 @@ async function initializeWorkFeed() {
     for (let j = 0; j < unpairedSquares.length; j += 2) {
       if (j + 1 < unpairedSquares.length) {
         allRows.push({
-          type: "half-width",
+          type: "square",
           items: [unpairedSquares[j], unpairedSquares[j + 1]],
         });
       } else {
-        allRows.push({ type: "half-width", items: [unpairedSquares[j]] });
+        allRows.push({ type: "square", items: [unpairedSquares[j]] });
       }
     }
 
@@ -343,10 +343,10 @@ function filterWorkFeedItems(category) {
 
   for (let i = 0; i < itemsForRows.length; i++) {
     const item = itemsForRows[i];
-    if (item.isWide) {
-      allRows.push({ type: "full-width", items: [item] });
-    } else if (i + 1 < itemsForRows.length && !itemsForRows[i + 1].isWide) {
-      allRows.push({ type: "half-width", items: [item, itemsForRows[i + 1]] });
+    if (item.isLandscape) {
+      allRows.push({ type: "landscape", items: [item] });
+    } else if (i + 1 < itemsForRows.length && !itemsForRows[i + 1].isLandscape) {
+      allRows.push({ type: "square", items: [item, itemsForRows[i + 1]] });
       i++;
     } else {
       unpairedSquares.push(item);
@@ -356,11 +356,11 @@ function filterWorkFeedItems(category) {
   for (let j = 0; j < unpairedSquares.length; j += 2) {
     if (j + 1 < unpairedSquares.length) {
       allRows.push({
-        type: "half-width",
+        type: "square",
         items: [unpairedSquares[j], unpairedSquares[j + 1]],
       });
     } else {
-      allRows.push({ type: "half-width", items: [unpairedSquares[j]] });
+      allRows.push({ type: "square", items: [unpairedSquares[j]] });
     }
   }
 
@@ -403,10 +403,10 @@ function renderWorkFeed() {
   const appendRow = (row) => {
     const rowElement = document.createElement("div");
     rowElement.className = "image__row";
-    if (row.type === "half-width") {
-      rowElement.classList.add("half-width");
+    if (row.type === "square") {
+      rowElement.classList.add("square");
     } else {
-      rowElement.classList.add("full-width");
+      rowElement.classList.add("landscape");
     }
     row.items.forEach((item) => {
       const itemElement = document.createElement("div");
@@ -507,18 +507,18 @@ async function initializeWorkSlideshow() {
     const workItems = await response.json();
     const items = workItems.map((item) => {
       const src = `/assets/images/work/${item.file}`;
-      const isWide = item.file.includes("-full-width-");
-      return { src, isWide };
+      const isLandscape = item.file.includes("-landscape-");
+      return { src, isLandscape };
     });
     const shuffled = shuffleArray(items);
     const rows = [];
 
     for (let i = 0; i < shuffled.length; i++) {
       const it = shuffled[i];
-      if (it.isWide) {
-        rows.push({ type: "full-width", items: [it] });
-      } else if (i + 1 < shuffled.length && !shuffled[i + 1].isWide) {
-        rows.push({ type: "half-width", items: [it, shuffled[i + 1]] });
+      if (it.isLandscape) {
+        rows.push({ type: "landscape", items: [it] });
+      } else if (i + 1 < shuffled.length && !shuffled[i + 1].isLandscape) {
+        rows.push({ type: "square", items: [it, shuffled[i + 1]] });
         i++;
       }
     }
