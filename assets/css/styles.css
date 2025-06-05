@@ -652,7 +652,7 @@ a.light:hover {
   margin: var(--size-0);
   margin-right: var(--size-base);
   padding: var(--size-0);
-  transition: color var(--duration-fast) var(--easing-in-out);
+  transition: color var(--duration-fast) var(--easing-default);
   user-select: none;
 }
 
@@ -739,7 +739,7 @@ a.light:hover {
   height: var(--size-24);
   margin: var(--size-0);
   padding: var(--size-0);
-  transition: transform var(--duration-fast) var(--easing-in-out);
+  transition: transform var(--duration-fast) var(--easing-default);
   width: var(--size-24);
 }
 
@@ -793,7 +793,7 @@ a.light:hover {
   cursor: pointer;
   padding: var(--size-base) var(--size-0);
   position: relative;
-  transition: background-color var(--duration-fast) var(--easing-in-out);
+  transition: background-color var(--duration-fast) var(--easing-default);
 }
 
 .accordion__item::before {
@@ -851,7 +851,7 @@ a.light:hover {
   height: var(--size-100percent);
   overflow: hidden;
   position: relative;
-  transition: opacity var(--duration-medium) var(--easing-in-out);
+  transition: opacity var(--duration-medium) var(--easing-default);
   width: var(--size-100percent);
 }
 
@@ -864,7 +864,7 @@ a.light:hover {
   display: block;
   height: var(--size-100percent);
   object-fit: cover;
-  transition: opacity var(--duration-medium) var(--easing-in-out);
+  transition: opacity var(--duration-medium) var(--easing-default);
   width: var(--size-100percent);
 }
 
