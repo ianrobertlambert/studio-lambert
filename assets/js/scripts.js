@@ -11,7 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
     };
     const timeString = now.toLocaleTimeString("en-GB", options);
     timeElement.textContent = timeString + " France";
-    const hour = now.getHours();
+    const hour = parseInt(
+      now.toLocaleString("en-GB", { hour: "2-digit", hour12: false, timeZone: "Europe/Paris" }),
+      10
+    );
     if (statusDot) {
       if (hour >= 9 && hour < 18) {
         statusDot.style.backgroundColor = "var(--color-lime)";
