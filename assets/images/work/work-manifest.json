@@ -27,6 +27,10 @@
   { "file": "product-vera-square-02.jpg",     "category": "product", "title": "Vera",         "description": "Product", "isLandscape": false },
   { "file": "product-vera-square-03.jpg",     "category": "product", "title": "Vera",         "description": "Product", "isLandscape": false },
   { "file": "product-vera-square-04.jpg",     "category": "product", "title": "Vera",         "description": "Product", "isLandscape": false },
+  { "file": "product-monarch-square-01.jpg",     "category": "product", "title": "Monarch",         "description": "Product", "isLandscape": false },
+  { "file": "product-monarch-square-02.jpg",     "category": "product", "title": "Monarch",         "description": "Product", "isLandscape": false },
+  { "file": "product-monarch-square-03.jpg",     "category": "product", "title": "Monarch",         "description": "Product", "isLandscape": false },
+  { "file": "product-monarch-square-04.jpg",     "category": "product", "title": "Monarch",         "description": "Product", "isLandscape": false },
 
   { "file": "web-beaux-villages-square-01.jpg","category": "web",     "title": "Beaux Villages","description": "Web",     "isLandscape": false },
   { "file": "web-beaux-villages-square-02.jpg","category": "web",     "title": "Beaux Villages","description": "Web",     "isLandscape": false },
