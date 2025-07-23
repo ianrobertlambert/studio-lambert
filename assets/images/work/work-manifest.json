@@ -46,6 +46,7 @@
   { "file": "web-manifest-landscape-03.jpg",     "category": "web",     "title": "Manifest",     "description": "Web",     "isLandscape": true },
   { "file": "web-reassemble-landscape-01.jpg",   "category": "web",     "title": "Reassemble",   "description": "Web",     "isLandscape": true },
 
+  { "file": "brand-haybale-landscape-01.jpg",   "category": "brand",   "title": "Haybale",            "description": "Brand",   "isLandscape": true },
   { "file": "brand-betr-landscape-01.jpg",   "category": "brand",   "title": "Betr",            "description": "Brand",   "isLandscape": true },
   { "file": "brand-betr-square-02.jpg",   "category": "brand",   "title": "Betr",            "description": "Brand",   "isLandscape": false },
   { "file": "brand-betr-square-03.jpg",   "category": "brand",   "title": "Betr",            "description": "Brand",   "isLandscape": false },
